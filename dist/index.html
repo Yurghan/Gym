@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="img/favi.png" />
+    <title>MilosGym - Twoja siłownia</title>
+
+    <!-- Fonts + Icons -->
+    <script
+      src="https://kit.fontawesome.com/1f7d54da8a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS + JS -->
+    <link rel="stylesheet" href="css/main.css" />
+    <script defer src="script.js"></script>
+  </head>
+
+  <body>
+    <!-- Section 1 -->
+    <header class="header">
+      <nav class="menu">
+        <i
+          class="menu__logo fas fa-dumbbell"
+          id="logo"
+          alt="MilosGym"
+          data-version-number="3.0"
+        >
+          MilosGym
+        </i>
+        <ul class="menu__links">
+          <li class="menu__item">
+            <a class="menu__link" href="#section--2">O nas</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#section--3">Oferta</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#section--4">Opinie</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link menu__link--btn btn--show-modal" href="#">
+              Zapisz się na trening
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__title">
+        <h1>
+          Osiągaj swoje cele
+          <br />
+          razem z <span class="header__highlight">MilosGym</span>
+        </h1>
+        <h4>Wszystko czego potrzebuje Twoje ciało w jednym miejscu</h4>
+        <button class="btn--text btn--scroll-to">
+          Dowiedz się więcej &DownArrow;
+        </button>
+        <img src="img/couple.png" class="header__img" alt="couple" />
+      </div>
+    </header>
+
+    <!-- Section 2-->
+    <section class="section" id="section--2">
+      <div class="section__title">
+        <h2 class="section__description">O nas</h2>
+        <h3 class="section__header">
+          Dbamy o zdrowie i samopoczucie naszych klientów od 20 lat!
+        </h3>
+      </div>
+
+      <div class="story">
+        <img
+          src="img/start-compressed.jpg"
+          data-src="img/start.jpg"
+          alt="poczatek"
+          class="story__img lazy-img"
+        />
+        <div class="story__segment">
+          <div class="story__icon">
+            <i class="far fa-calendar-alt"></i>
+          </div>
+          <h5 class="story__header">Początki</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+            odit eos aut facere quisquam repellendus in impedit libero ex
+            voluptate a corporis nostrum, iure voluptatem totam quae sequi,
+            recusandae beatae!
+          </p>
+        </div>
+
+        <div class="story__segment">
+          <div class="story__icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h5 class="story__header">Rozwój</h5>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime
+            saepe, delectus odio quo ratione blanditiis minima ullam ipsum
+            explicabo rerum labore excepturi vitae inventore quia!
+          </p>
+        </div>
+        <img
+          src="img/rozwoj-compressed.jpg"
+          data-src="img/rozwoj.jpg"
+          alt="rozwoj"
+          class="story__img lazy-img"
+        />
+
+        <img
+          src="img/aktualnie-compressed.jpg"
+          data-src="img/aktualnie.jpg"
+          alt="terazniejszosc"
+          class="story__img lazy-img"
+        />
+        <div class="story__segment">
+          <div class="story__icon">
+            <i class="fas fa-globe-europe"></i>
+          </div>
+          <h5 class="story__header">Teraźniejszość</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Necessitatibus nostrum quae corporis vel modi, qui harum dicta
+            voluptate assumenda rerum?
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3-->
+    <section class="section" id="section--3">
+      <div class="section__title">
+        <h2 class="section__description">Oferta</h2>
+        <h3 class="section__header">Sprawdź co możemy dla Ciebie zrobić</h3>
+      </div>
+
+      <div class="services">
+        <div class="services__tab-container">
+          <button
+            class="btn services__tab services__tab--1 services__tab--active"
+            data-tab="1"
+          >
+            <span>01</span>Siłownia
+          </button>
+          <button class="btn services__tab services__tab--2" data-tab="2">
+            <span>02</span>Dietetyk
+          </button>
+          <button class="btn services__tab services__tab--3" data-tab="3">
+            <span>03</span>Fizjoterapeuta
+          </button>
+        </div>
+        <div
+          class="services__content services__content--1 services__content--active"
+        >
+          <div class="services__icon services__icon--1">
+            <i class="fas fa-dumbbell"></i>
+          </div>
+          <h5 class="services__header">
+            Wykwalifikowani trenerzy oraz nowoczesny sprzęt
+          </h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+            dolorum quae harum corporis nam velit provident blanditiis,
+            aspernatur nisi numquam! Eligendi, inventore? Quidem, aut natus
+            similique dolores aliquam explicabo? Iusto!
+          </p>
+        </div>
+
+        <div class="services__content services__content--2">
+          <div class="services__icon services__icon--2">
+            <i class="fas fa-utensils"></i>
+          </div>
+          <h5 class="services__header">
+            Profesjonalne doradztwo w dziedzinie dietetyki
+          </h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+            praesentium, omnis reiciendis, ab sapiente perferendis ea vel soluta
+            quidem atque ex non rem aliquam, consectetur laborum libero
+            repellendus obcaecati quasi!
+          </p>
+        </div>
+        <div class="services__content services__content--3">
+          <div class="services__icon services__icon--3">
+            <i class="far fa-plus-square"></i>
+          </div>
+          <h5 class="services__header">
+            Opieka fizjoterapeutyczna na najwyższym poziome
+          </h5>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis
+            minima illum facere laboriosam? Veniam odit officiis beatae enim
+            necessitatibus. Sit possimus natus id tenetur. Unde sed porro quod
+            odio quidem!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4-->
+    <section class="section" id="section--4">
+      <div class="section__title section__title--testimonials">
+        <h2 class="section__description">Sprawdź co o nas mówią</h2>
+        <h3 class="section__header">
+          Setki osób skorzystało z naszych usług - oto opinie niektórych z nich
+        </h3>
+      </div>
+
+      <div class="slider">
+        <div class="slide">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              Najlepsza siłownia jaką kiedykolwiek odwiedziłem
+            </h5>
+            <blockquote class="testimonial__text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod,
+              mollitia! Iusto minus non quis enim aspernatur asperiores cum
+              ipsum nihil. Culpa officiis consequuntur at reprehenderit
+              cupiditate, accusantium neque eveniet ad maxime voluptas
+              blanditiis earum tenetur?
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/user-1.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Jan Kowalski</h6>
+              <p class="testimonial__add">Nasz klient od 2016</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="testimonial">
+            <h5 class="testimonial__header">Wszystko w jednym miejscu</h5>
+            <blockquote class="testimonial__text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi,
+              quisquam. Repudiandae et similique, harum consectetur praesentium
+              quisquam rem. Fugit earum accusamus velit architecto ratione eos
+              amet quis delectus laborum optio labore blanditiis, nesciunt quo.
+              Eligendi consequuntur harum ab inventore fuga.
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/user-2.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Katarzyna Nowak</h6>
+              <p class="testimonial__add">Nasza klientka od 2013</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              Śwetny dietetyk oraz fizjoterapeuta
+            </h5>
+            <blockquote class="testimonial__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro
+              officia, at pariatur consectetur, accusamus nostrum quasi, itaque
+              cupiditate amet ducimus temporibus sed numquam deserunt impedit
+              libero sunt. Eaque, rerum. Fugiat esse animi corrupti corporis
+              impedit!
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/user-3.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Janusz Nosacz</h6>
+              <p class="testimonial__add">Nasz klient od 2019</p>
+            </address>
+          </div>
+        </div>
+
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+    </section>
+
+    <!-- Section 5-->
+    <section class="section section--sign-up">
+      <div class="section__title">
+        <h3 class="section__header">Dziś jest ten dzień!</h3>
+      </div>
+      <button class="btn btn--show-modal">
+        Rozpocznij przygodę z siłownią już teraz
+      </button>
+    </section>
+
+    <!-- Section 6 -->
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a class="footer__link" href="#">Blog</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Jak zacząć?</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Zdrowotne korzyści</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Rozpiski treningów</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Przykładowe diety</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Nasze oddziały</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Kontakt</a>
+        </li>
+      </ul>
+      <i
+        class="footer__logo fas fa-dumbbell"
+        id="logo"
+        alt="MilosGym"
+        data-version-number="3.0"
+      >
+        MilosGym</i
+      >
+      <p class="footer__copyright">
+        &copy; Copyright by
+        <a
+          class="footer__link webmilo-link"
+          target="_blank"
+          href="https://webmilo.com/"
+          >Miłosz Topolewski</a
+        >
+      </p>
+    </footer>
+
+    <!-- Section 7 -- hidden one -->
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+        Zadbaj o swoje zdrowie <br />
+        i wygląd już teraz
+      </h2>
+      <form class="modal__form">
+        <label>Imię</label>
+        <input type="text" />
+        <label>Numer Telefonu</label>
+        <input type="tel" />
+        <label>Adres e-mail</label>
+        <input type="email" />
+        <button class="btn">Zapisz się &rarr;</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+  </body>
+</html>
