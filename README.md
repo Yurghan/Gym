@@ -4,7 +4,7 @@ Gym Website - November 2021
 
 Project status: FINISHED --- RWD not added
 
-Preview: milosgym.netlify.app
+Preview: info-countries-milos.netlify.app
 
 ## Technologies
 
